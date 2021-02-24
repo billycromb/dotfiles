@@ -6,6 +6,10 @@ if [[ $(uname) == 'Darwin' ]]; then
   exit 1
 fi
 
-# ln -sf ~/dotfiles/bashrc ~/.bashrc
-# ln -sf ~/dotfiles/vimrc ~/.vimrc
-# ln -sf ~/dotfiles/.vim ~/.vim
+ln -sf ~/dotfiles/bashrc ~/.bashrc
+ln -sf ~/dotfiles/vimrc ~/.vimrc
+ln -sf ~/dotfiles/.vim ~/.vim
+
+# Install dein and vim plugins
+~/dotfiles/install_dein.sh ~/dein_plugins
+vim -c 'call dein#install()' +qall

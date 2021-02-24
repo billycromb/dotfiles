@@ -1,13 +1,13 @@
 set nocompatible
 "dein Scripts-----------------------------
-set runtimepath+=/Users/billycromb/.vim/dein_plugins/repos/github.com/Shougo/dein.vim
+set runtimepath+=~/.vim/dein_plugins/repos/github.com/Shougo/dein.vim
 
 " Required:
-if dein#load_state('/Users/billycromb/.vim/dein_plugins')
-  call dein#begin('/Users/billycromb/.vim/dein_plugins')
+if dein#load_state('~/.vim/dein_plugins')
+  call dein#begin('~/.vim/dein_plugins')
 
   " Let dein manage dein
-  call dein#add('/Users/billycromb/.vim/dein_plugins/repos/github.com/Shougo/dein.vim')
+  call dein#add('~/.vim/dein_plugins/repos/github.com/Shougo/dein.vim')
 
   " Add or remove your plugins here like this:
 	call dein#add('dense-analysis/ale')
