@@ -16,7 +16,7 @@ if dein#load_state('~/dein_plugins')
   " typescript things
   call dein#add('pangloss/vim-javascript')
   call dein#add('leafgarland/typescript-vim')
-  call dein#add('maxmellon/vim-jsx-pretty')
+  call dein#add('peitalin/vim-jsx-typescript')
   call dein#add('jparise/vim-graphql')
 
   " Required:
