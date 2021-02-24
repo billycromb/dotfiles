@@ -11,5 +11,5 @@ ln -sf ~/dotfiles/vimrc ~/.vimrc
 ln -sf ~/dotfiles/.vim ~/.vim
 
 # Install dein and vim plugins
-~/dotfiles/install_dein.sh ~/dein_plugins
+~/dotfiles/dein_install.sh ~/dein_plugins
 vim -c 'call dein#install()' +qall
