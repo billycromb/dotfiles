@@ -16,6 +16,6 @@ vim -c 'call dein#install()' +qall
 
 cat zshrc >> ~/.zshrc
 
-if [[ "$HOST" == 'spin' ]]; then
+if [[ "$USER" == 'spin' ]]; then
   sudo apt-get install ripgrep
-end
+fi
