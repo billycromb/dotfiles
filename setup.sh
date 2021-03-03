@@ -12,7 +12,8 @@ ln -sf ~/dotfiles/.vim ~/.vim
 
 # Install dein and vim plugins
 ~/dotfiles/dein_install.sh ~/dein_plugins
-vim -c 'call dein#install()' +qall
+vim -c "try | call dein#install() | finally | qall! | endtry" \
+	-N -u ~/.vimrc -U NONE -i NONE -V1 -e -s
 
 cat zshrc >> ~/.zshrc
 
